@@ -1,0 +1,576 @@
+/*removing extra margins from the page and adding dark mode background*/
+body {
+  margin: 0;
+  background-color: #ffffff;
+}
+/*fixed navbar with zindex and special background*/
+nav {
+  background-color: #ffffff;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  z-index: 3;
+}
+/*Docplanner logo position*/
+.dglogo img {
+  width: 20%;
+  padding-left: 12%;
+}
+/*navigation buttons style and position*/
+.navbuttons {
+  position: absolute;
+  padding-left: 68%;
+  padding-top: 0.8%;
+  font-weight: normal;
+  font-size: large;
+  text-align: center;
+  font-family: "Roboto", Arial, sans-serif;
+}
+/*removing extra style from nav-buttons anchors and adding padding between them*/
+.navbuttons a {
+  text-decoration: none;
+  padding-right: 20px;
+}
+/*nav-buttons default color*/
+.navbuttons a:link {
+  color: #00b39b;
+}
+/*nav-buttons color after visiting them*/
+.navbuttons a:visited {
+  color: gray;
+}
+/*nav-buttons color when hovering them*/
+.navbuttons a:hover {
+  color: #02ccb1;
+}
+/*active nav-button color*/
+.navbuttons a:active {
+  color: #02ccb1;
+}
+/*special nav-button with dropdown (departments) style*/
+.dropbtn {
+  font-size: inherit;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: normal;
+  all: unset;
+  color: gray;
+  padding-bottom: 0;
+}
+/*color of departments when hovering*/
+.dropbtn:hover {
+  color: #00b39b;
+}
+/*dropdown content style & position and display none*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  width: 16%;
+  box-shadow: 0px 2px 5px #dadada;
+  font-weight: normal;
+  margin-left: 12%;
+  font-size: small;
+}
+/*dropdown content anchors style & position*/
+.dropdown-content a {
+  padding: 8% 4% 0% 8%;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+/*extra padding for the dropdown menu*/
+#extra {
+  padding-bottom: 8%;
+}
+/*when hovering on the departments button -> change the display of the dropdown menu to block*/
+.dpsp:hover .dropdown-content {
+  display: block;
+}
+/*spinning docplanner logo*/
+.intrologo {
+  display: block;
+  margin: 10% auto 0 auto;
+}
+/*caption for the rotating logo*/
+figure figcaption {
+  color: #02ccb1;
+  font-family: "Roboto", Arial, sans-serif;
+  text-align: center;
+  padding-top: 2%;
+  font-size: xx-large;
+  font-weight: bold;
+  padding-bottom: 3%;
+}
+/*flex container for introduction paragraphs*/
+.firstcontainer {
+  display: flex;
+  flex-direction: row;
+  margin-left: 11%;
+  margin-right: 11%;
+  margin-bottom: 5%;
+}
+/*paragraphs style*/
+.firstcontainer p {
+  font-family: "Roboto", Arial, sans-serif;
+  color: #747474;
+  text-align: justify;
+  font-weight: 400;
+  font-size: large;
+}
+/*margin between paragraph 1 & 2*/
+#pindent {
+  margin-right: 5%;
+}
+/*another flex container for the 3 boxes*/
+.secondcontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 11%;
+  margin-right: 11%;
+}
+/*the 3 boxes style*/
+.secondcontainer div {
+  width: 100%;
+  border-radius: 3%;
+  height: 300px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 4%;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: x-large;
+  text-align: left;
+}
+/*space between boxes*/
+.divindent {
+  margin-right: 2%;
+}
+/*box 1 color*/
+.turq {
+  background-color: #02ccb1da;
+}
+/*box 2 color*/
+.blue {
+  background-color: #02996c;
+}
+/*box 3 color*/
+.black {
+  background-color: #2b658b;
+}
+/*box 1 hover color*/
+.turq:hover {
+  background-color: #02ccb1a9;
+}
+/*box 2 hover color*/
+.blue:hover {
+  background-color: #02aa78ad;
+}
+/*box 3 hover color*/
+.black:hover {
+  background-color: #2b658bb7;
+}
+/*button style for box 1 & box 2*/
+.countries {
+  font-size: large;
+  font-family: "Roboto", Arial, sans-serif;
+  border: none;
+  outline: none;
+  background: transparent;
+  text-transform: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+/*button style for box 3*/
+.specialists {
+  font-size: large;
+  font-family: "Roboto", Arial, sans-serif;
+  border: none;
+  outline: none;
+  background: transparent;
+  text-transform: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+/*header style & position*/
+.partnersx h1 {
+  font-size: xx-large;
+  color: #02ccb1;
+  font-family: "Roboto", Arial, sans-serif;
+  margin-left: 12%;
+  padding-top: 2%;
+  display: inline-block;
+}
+/*margin between the header and partners*/
+.partnersx {
+  margin-bottom: 2%;
+}
+/*turning last 3 svg imgs to grey*/
+.gipo img,
+.cc img,
+.tuotempo img {
+  filter: invert(98%) sepia(2%) saturate(0) hue-rotate(180deg) brightness(300%)
+    contrast(0);
+  opacity: 0.55;
+  padding-left: 4%;
+}
+/*turning the 3 last svg imgs to their original colors on hover*/
+.gipo img:hover,
+.cc img:hover,
+.tuotempo img:hover {
+  filter: none;
+  opacity: 1;
+}
+/*partners positions*/
+.all {
+  display: inline-block;
+  position: absolute;
+  margin-left: 1%;
+  padding-top: 5.5%;
+}
+/*filling the partners svgs with grey*/
+.all a path {
+  fill: hsla(0, 0%, 67%, 0.7);
+}
+/*filling the partners svgs with blue on hover*/
+.all a:hover path {
+  fill: #00bfa5;
+}
+/*partners svgs size & space between each other*/
+div a svg {
+  height: 25px;
+  padding-bottom: 2%;
+}
+/*partners last 3 svg imgs space between each other*/
+div a img {
+  padding-bottom: 2%;
+}
+/*removing anchor decoration for partners*/
+a {
+  text-decoration: none;
+}
+/*creating a diffrent background color and setting overflow to hidden*/
+.turqback {
+  background-color: #e5faf8;
+  display: inline-block;
+  height: 610px;
+  width: 100%;
+  overflow: hidden;
+}
+/*positioning the Docplanner logo inside the special background*/
+.turqback img {
+  margin-top: 3%;
+  margin-left: 3%;
+}
+/*styling and positioning the first paragraph in the special zone*/
+.turqback p:first-of-type {
+  font-size: xx-large;
+  color: #02ccb1;
+  font-family: "Roboto", Arial, sans-serif;
+  margin-left: 12%;
+  padding-top: 4%;
+}
+/*styling and positioning the second paragraph in the special zone*/
+.turqback p:nth-of-type(2) {
+  font-size: large;
+  color: gray;
+  text-align: left;
+  font-family: "Roboto", Arial, sans-serif;
+  margin-left: 12%;
+}
+/*creating a 3x3 grid and positioning it*/
+.quadrabox {
+  display: grid;
+  grid-template-rows: 3;
+  grid-template-columns: 3;
+  position: absolute;
+  top: 180%;
+  left: 60%;
+  gap: 20px 20px;
+}
+/*styling the grid boxes*/
+.quadrabox div {
+  background-color: #ffffff;
+  height: 220px;
+  width: 200px;
+  margin-right: 80%;
+  border-radius: 5%;
+  border: solid;
+  border-color: #ffffff;
+}
+/*positioning the boxes in the grid*/
+.quadrabox div:nth-of-type(1),
+.quadrabox div:nth-of-type(3) {
+  grid-column: 1/2;
+}
+.quadrabox div:nth-of-type(2),
+.quadrabox div:nth-of-type(4) {
+  grid-column: 2/3;
+}
+.quadrabox div:nth-of-type(1),
+.quadrabox div:nth-of-type(2) {
+  grid-row: 1/2;
+}
+.quadrabox div:nth-of-type(3),
+.quadrabox div:nth-of-type(4) {
+  grid-row: 2/3;
+}
+/*caption style for figure img inside each box*/
+.quadrabox div figure figcaption {
+  font-size: large;
+  color: #02ccb1;
+  font-family: "Roboto", Arial, sans-serif;
+  text-align: center;
+  margin-top: 16%;
+}
+/*figure img positioning inside each box*/
+.quadrabox div figure img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*paragraph style for first box only*/
+.firstp {
+  font-size: x-small;
+  color: #747474;
+  font-family: "Roboto", Arial, sans-serif;
+  text-align: center;
+  font-weight: 800;
+}
+/*paragraph style for the other 3 boxes*/
+.secondp {
+  font-size: large;
+  color: #747474;
+  font-family: "Roboto", Arial, sans-serif;
+  text-align: center;
+}
+/*header style & position for the last section*/
+.lastsection h1 {
+  padding-top: 2%;
+  text-align: center;
+  font-size: xx-large;
+  color: #03b49d;
+  font-family: "Roboto", Arial, sans-serif;
+}
+/*paragraph style & position under the header*/
+.lastsection p {
+  text-align: center;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: medium;
+  color: gray;
+  font-weight: bold;
+}
+/*4x4 grid style & position for 9 items ( 2 blank ) */
+.places {
+  display: grid;
+  grid-template-rows: 4;
+  grid-template-columns: 4;
+  justify-items: center;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+/*grid boxes style*/
+.places div {
+  height: 350px;
+  width: 100%;
+  padding-top: 5%;
+}
+/*img caption position & style inside each box*/
+.places div figure figcaption {
+  display: inline-block;
+  position: absolute;
+  text-align: left;
+  font-size: large;
+  font-family: "Roboto", Arial, sans-serif;
+  color: gray;
+  font-weight: bold;
+}
+/*button position & style inside each box*/
+.places div span {
+  display: inline-block;
+  position: absolute;
+  background-color: #03b49d;
+  color: white;
+  margin-top: 1.7%;
+  padding: 0.5% 0.5% 0.5% 0.5%;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 10px;
+  font-family: Arial, Arial, sans-serif;
+  font-weight: 400;
+}
+/*caption positions*/
+.fg1,
+.fg2,
+.fg3 {
+  top: 350%;
+}
+.fg4,
+.fg5,
+.fg6 {
+  top: 408%;
+}
+.fg2,
+.fg5 {
+  left: 40%;
+}
+.fg3,
+.fg6 {
+  left: 70%;
+}
+.fg1,
+.fg4 {
+  left: 10%;
+}
+.fg7 {
+  top: 467%;
+  left: 10%;
+}
+/*buttons positions*/
+.sp1,
+.sp2,
+.sp3 {
+  top: 350%;
+}
+.sp4,
+.sp5,
+.sp6 {
+  top: 408%;
+}
+.sp2,
+.sp5 {
+  left: 53%;
+}
+.sp3,
+.sp6 {
+  left: 83%;
+}
+.sp1,
+.sp4 {
+  left: 23%;
+}
+.sp7 {
+  top: 468%;
+  left: 23%;
+}
+/*removing anchor default styles for buttons*/
+.places div span a {
+  color: white;
+  text-decoration: none;
+}
+/*buttons hover effect*/
+.places div span:hover {
+  background-color: #03b49d;
+  box-shadow: 2px 2px white;
+}
+/*img position inside each box + padding space for the caption and button*/
+.places div figure img {
+  display: block;
+  padding-bottom: 14%;
+  border-radius: 15px;
+}
+/*hovering img glow effect*/
+.places div figure img:hover {
+  box-shadow: 0px 3px 20px #02ccb1;
+}
+/*boxes positions inside the 4x4 grid*/
+.places div:nth-of-type(1),
+.places div:nth-of-type(4) {
+  grid-column: 1/2;
+}
+.places div:nth-of-type(2),
+.places div:nth-of-type(5) {
+  grid-column: 2/3;
+}
+.places div:nth-of-type(3),
+.places div:nth-of-type(6) {
+  grid-column: 3/4;
+}
+.places div:nth-of-type(1),
+.places div:nth-of-type(2),
+.places div:nth-of-type(3) {
+  grid-row: 1/2;
+}
+.places div:nth-of-type(4),
+.places div:nth-of-type(5),
+.places div:nth-of-type(6) {
+  grid-row: 2/3;
+}
+.places div:nth-of-type(7) {
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+/*footer special background*/
+footer {
+  background-color: #ffffff;
+}
+/*footer first paragraph style & position*/
+footer p:first-of-type {
+  padding-top: 3%;
+  text-align: center;
+  font-size: 30px;
+  color: #333;
+  font-family: "Roboto", Arial, sans-serif;
+}
+/*footer button style & position*/
+footer span {
+  background-color: #03b49d;
+  color: white;
+  padding: 1% 1% 1% 1%;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 13px;
+  font-family: Arial, Arial, sans-serif;
+  font-weight: 600;
+  display: block;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+/*removing default anchor designs from footer button*/
+footer span a {
+  color: white;
+  text-decoration: none;
+}
+/*button hover effect*/
+footer span:hover {
+  box-shadow: 2px 2px white;
+}
+/*footer paragraph 2 style and position*/
+footer p:nth-of-type(2) {
+  text-align: center;
+  font-size: small;
+  font-family: "Roboto", Arial, sans-serif;
+  padding-top: 2%;
+  color: gray;
+}
+/*removing default anchor designs from paragraph 2 and styling it*/
+footer p:nth-of-type(2) a {
+  text-decoration: none;
+  color: #03b49d;
+}
+/*underline effect on hover for footer paragraph 2 */
+footer p:nth-of-type(2) a:hover {
+  text-decoration: underline;
+}
+/*footer paragraph 3 style and position*/
+footer p:nth-of-type(3) {
+  text-align: center;
+  font-size: small;
+  font-family: "Roboto", Arial, sans-serif;
+  color: gray;
+}
+
+::-moz-selection {
+  color: white;
+  background: #03b49d;
+}
+
+::selection {
+  color: white;
+  background: #03b49d;
+}
